@@ -1,0 +1,5 @@
+pyspark==3.5.1
+# required by pyspark.testing.utils.assertDataFrameEqual
+setuptools
+pandas
+pyarrow
