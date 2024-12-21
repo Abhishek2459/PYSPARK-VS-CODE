@@ -11,6 +11,6 @@ def highest_values_per_year(df: DataFrame) -> DataFrame:
 if __name__ == "__main__":
     spark: SparkSession = SparkSession.builder.appName("app").getOrCreate()
     df = spark.createDataFrame([
-        {"date": datetime.date.fromisoformat("2024-01-01"), "close": 2.0, "open": 1.0}
+        {"date": datetime.date.fromisoformat("2024-12-21"), "close": 2.0, "open": 1.0}
     ])
     highest_values_per_year(df).show()
